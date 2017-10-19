@@ -1,0 +1,22 @@
+body {
+    position: relative;
+}
+
+.section{
+    padding-top: 50px;
+}
+
+.section > h1{
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.section > p{
+    color: darkgray;
+    font-family: 'Roboto Slab', serif;
+}
+
+.nav {
+    font-family: 'Open Sans', sans-serif;
+}
