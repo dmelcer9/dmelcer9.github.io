@@ -17,11 +17,29 @@
     font-weight: 600;
 }
 
-.section p{
+.section p, .timepoint .timedescription{
     color: #444444;
     font-family: 'Roboto Slab', serif;
 }
 
 .nav {
     font-family: 'Open Sans', sans-serif;
+}
+
+.timepoint {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.timepoint .time{
+    font-style: italic;
+    font-family: 'Roboto Slab', serif;
+   
+    margin-right: 1em;
+}
+
+.timepoint .timeheader{
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
