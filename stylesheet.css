@@ -31,11 +31,17 @@
     flex-wrap: wrap;
 }
 
+.timepoint .timecontent {
+
+    min-width: 75%;
+    flex: 1 0 300px;
+}
+
 .timepoint .time{
     font-style: italic;
     font-family: 'Roboto Slab', serif;
-   
     margin-right: 1em;
+    min-width: 100px;
 }
 
 .timepoint .timeheader{
