@@ -1,19 +1,24 @@
-body {
+#content {
     position: relative;
+    height: 100%;
+}
+
+.navbar-brand:hover {
+    color: black;
 }
 
 .section{
     padding-top: 50px;
 }
 
-.section > h1{
+.section h1{
     color: black;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
 }
 
-.section > p{
-    color: darkgray;
+.section p{
+    color: #444444;
     font-family: 'Roboto Slab', serif;
 }
 
