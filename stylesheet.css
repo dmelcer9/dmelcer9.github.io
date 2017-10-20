@@ -1,56 +1,77 @@
+/* Fonts */
+
+.section, #content, #contactinfo, .section p, .timepoint .timedescription{
+    font-family: 'Roboto Slab', serif; /*Most content is serif*/
+}
+
+.timepoint .time{
+    font-family: 'Roboto Slab', serif; /*Time descriptions are serif italic*/
+    font-style: italic;
+}
+
+.nav, .timepoint .timeheader{
+    font-family: 'Open Sans', sans-serif; /*Minor headers and nav are sans-serif*/
+}
+
+.section h1, .section h2, .section h3{
+    font-family: 'Open Sans', sans-serif; /*Major headers are sans-serif semi-bold*/
+    font-weight: 600;
+}
+
+/* Colors */
+
+.section p, .timepoint .timedescription, .timepoint .time{
+    color: #444444; /*Most text is dark grey*/
+}
+
+.section h1, .section h2, .section h3 {
+    color: black; /*Headers are black*/
+}
+
+/* Spacing and Positioning */
+
+.timepoint .timeheader{
+    /*No spacing around headers in timeline*/
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
 #content {
+    /*Don't obscure content with navbar*/
     position: relative;
     height: 100%;
     padding-top: 50px;
 }
 
-.navbar-brand:hover {
-    color: black;
+#maincontent{
+    /*Add space at bottom of page*/
+    padding-bottom: 50px;
 }
 
-.section, #content{
-    font-family: 'Roboto Slab', serif;
+.timepoint .time, .skill .skillmeter{
+    /*Space between times/meters and content*/
+    margin-right: 1em;
+    min-width: 100px;
 }
 
-.section h1, .section h2, .section h3{
-    color: black;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
+/* Fix link jumps */
+
+.anchor {
+    display:block;
+    padding-top:50px;
+    margin-top:-50px;
 }
 
-#contactinfo{
-    margin-bottom: 1em;
-    font-family: 'Roboto Slab', serif;
-}
-
-.section p, .timepoint .timedescription{
-    color: #444444;
-    font-family: 'Roboto Slab', serif;
-}
-
+/* Hide email link when printing */
 @media print{
     #email a::after{
         content: none;
     }
 }
 
-.nav {
-    font-family: 'Open Sans', sans-serif;
-}
+/* Responsiveness */
 
-meter {
-    background: lightgrey;
-    width: 100px;
-}
-
-
-meter::after {
-    top:-17px;
-    left:40px;
-    position:relative;
-}
-
-.timepoint, .skill{
+.timepoint, .skill, #maincontent{
     display: flex;
     flex-wrap: wrap;
 }
@@ -60,49 +81,21 @@ meter::after {
     flex: 1 0 300px;
 }
 
-.timepoint .time, .skill .skillmeter{
-    margin-right: 1em;
-    min-width: 100px;
-}
-
-.timepoint .time{
-    font-style: italic;
-    font-family: 'Roboto Slab', serif;
-    color: #444444;
-}
-
-.timepoint .timeheader{
-    font-family: 'Open Sans', sans-serif;
-    margin-bottom: 0px;
-    margin-top: 0px;
-}
-
-.timepoint .timesubheader{
-    font-family: 'Open Sans', sans-serif;
-    margin-top: 0px;
-}
-
-#maincontent{
-    display:flex;
-    flex-wrap: wrap;
-    padding-bottom: 50px;
-}
-
 @media (min-width: 992px){
-
+    /* Inline sidebar content when screen gets small */
     #sidebarright {
         float: right;
         width:25%
-       }
-
+    }
+    
     #maincolumn {
         float: right;
         width:75%
     }
 } 
+    
+/* Meter formatting */
 
-.anchor {
-    display:block;
-    padding-top:50px;
-    margin-top:-50px;
+meter {
+    width: 100px;
 }
