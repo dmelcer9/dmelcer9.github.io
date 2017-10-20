@@ -9,7 +9,9 @@
 
 #content{
     padding-top: 50px;
+    font-family: 'Roboto Slab', serif;
 }
+
 
 .section h1, .section h2{
     color: black;
@@ -31,22 +33,36 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-.timepoint {
+meter {
+    background: lightgrey;
+    width: 100px;
+}
+
+
+meter::after {
+    top:-17px;
+    left:40px;
+    position:relative;
+}
+
+.timepoint, .skill{
     display: flex;
     flex-wrap: wrap;
 }
 
-.timepoint .timecontent {
-
+.timepoint .timecontent, .skill .skillcontent {
     min-width: 75%;
     flex: 1 0 300px;
+}
+
+.timepoint .time, .skill .skillmeter{
+    margin-right: 1em;
+    min-width: 100px;
 }
 
 .timepoint .time{
     font-style: italic;
     font-family: 'Roboto Slab', serif;
-    margin-right: 1em;
-    min-width: 100px;
     color: #444444;
 }
 
