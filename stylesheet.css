@@ -13,7 +13,7 @@
 }
 
 
-.section h1, .section h2{
+.section h1, .section h2, .section h3{
     color: black;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
@@ -82,3 +82,21 @@ meter::after {
     font-family: 'Open Sans', sans-serif;
     margin-top: 0px;
 }
+
+#maincontent{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 768px){
+
+    #sidebarright {
+        float: right;
+        width:20%
+       }
+
+    #maincolumn {
+        float: right;
+        width:80%
+    }
+} 
