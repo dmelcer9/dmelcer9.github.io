@@ -1,17 +1,16 @@
 #content {
     position: relative;
     height: 100%;
+    padding-top: 50px;
 }
 
 .navbar-brand:hover {
     color: black;
 }
 
-#content{
-    padding-top: 50px;
+.section, #content{
     font-family: 'Roboto Slab', serif;
 }
-
 
 .section h1, .section h2, .section h3{
     color: black;
@@ -86,6 +85,7 @@ meter::after {
 #maincontent{
     display:flex;
     flex-wrap: wrap;
+    padding-bottom: 50px;
 }
 
 @media (min-width: 992px){
@@ -105,4 +105,4 @@ meter::after {
     display:block;
     padding-top:50px;
     margin-top:-50px;
- }
+}
