@@ -29,6 +29,12 @@
     font-family: 'Roboto Slab', serif;
 }
 
+@media print{
+    #email a::after{
+        content: none;
+    }
+}
+
 .nav {
     font-family: 'Open Sans', sans-serif;
 }
