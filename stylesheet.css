@@ -48,7 +48,7 @@
     padding-bottom: 50px;
 }
 
-.timepoint .time, .skill .skillmeter{
+.timepoint .time{
     /*Space between times/meters and content*/
     margin-right: 1em;
     min-width: 100px;
@@ -93,9 +93,3 @@
         width:75%
     }
 } 
-    
-/* Meter formatting */
-
-meter {
-    width: 100px;
-}
