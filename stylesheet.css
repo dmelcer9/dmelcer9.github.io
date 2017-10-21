@@ -71,12 +71,12 @@
 
 /* Responsiveness */
 
-.timepoint, .skill, #maincontent{
+.timepoint, #maincontent{
     display: flex;
     flex-wrap: wrap;
 }
 
-.timepoint .timecontent, .skill .skillcontent {
+.timepoint .timecontent {
     min-width: 75%;
     flex: 1 0 300px;
 }
