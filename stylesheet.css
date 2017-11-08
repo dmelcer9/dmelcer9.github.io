@@ -67,6 +67,10 @@
     #email a::after{
         content: none;
     }
+
+    #content {
+        padding-top: 0px;
+    }
 }
 
 /* Responsiveness */
