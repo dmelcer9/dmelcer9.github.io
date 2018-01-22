@@ -1,7 +1,16 @@
 /* Fonts */
 
+#content{
+  margin-top: 1em;
+}
+
 .section, #content, #contactinfo, .section p, .timepoint .timedescription{
     font-family: 'Roboto Slab', serif; /*Most content is serif*/
+
+}
+
+.section {
+  margin-bottom: 1em;
 }
 
 .timepoint .time{
@@ -34,13 +43,6 @@
     /*No spacing around headers in timeline*/
     margin-bottom: 0px;
     margin-top: 0px;
-}
-
-#content {
-    /*Don't obscure content with navbar*/
-    position: relative;
-    height: 100%;
-    padding-top: 50px;
 }
 
 #maincontent{
@@ -85,15 +87,19 @@
     flex: 1 0 300px;
 }
 
+.section img {
+  width: 100%;
+}
+
 @media (min-width: 999999px){ /*992*/
     /* Inline sidebar content when screen gets small */
     #sidebarright {
         float: right;
         width:25%
     }
-    
+
     #maincolumn {
         float: right;
         width:75%
     }
-} 
+}
