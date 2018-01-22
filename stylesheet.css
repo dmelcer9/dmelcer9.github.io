@@ -1,7 +1,16 @@
 /* Fonts */
 
-#content{
-  margin-top: 1em;
+#header{
+  background-color: #9e9e9e;
+  color: white;
+  padding-top: .25em;
+  padding-bottom: .25em;
+  margin-bottom: .25em;
+
+}
+
+#header h1{
+  margin-bottom: 0px;
 }
 
 .section, #content, #contactinfo, .section p, .timepoint .timedescription{
@@ -22,7 +31,7 @@
     font-family: 'Open Sans', sans-serif; /*Minor headers and nav are sans-serif*/
 }
 
-.section h1, .section h2, .section h3{
+#header h1, .section h1, .section h2, .section h3{
     font-family: 'Open Sans', sans-serif; /*Major headers are sans-serif semi-bold*/
     font-weight: 600;
 }
