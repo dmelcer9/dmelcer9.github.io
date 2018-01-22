@@ -6,11 +6,17 @@
   padding-top: .25em;
   padding-bottom: .25em;
   margin-bottom: .25em;
-
+  position: fixed;
+  width: 100%;
+  z-index: 9999999;
 }
 
 #header h1{
   margin-bottom: 0px;
+}
+
+#content{
+  padding-top: 60px;
 }
 
 .section, #content, #contactinfo, .section p, .timepoint .timedescription{
