@@ -1,14 +1,25 @@
 /* Fonts */
 
 #header{
-  background-color: #9e9e9e;
-  color: white;
+  transition: 0.3s all;
+  background-color: white;
+  color: black;
   padding-top: .25em;
   padding-bottom: .25em;
   margin-bottom: .25em;
   position: fixed;
   width: 100%;
   z-index: 9999999;
+}
+
+#header.scroll{
+  background-color: #9e9e9e;
+  color: white;
+}
+
+#footer{
+  height: 50px;
+  background-color: #9e9e9e;
 }
 
 #header h1{
@@ -58,11 +69,6 @@
     /*No spacing around headers in timeline*/
     margin-bottom: 0px;
     margin-top: 0px;
-}
-
-#maincontent{
-    /*Add space at bottom of page*/
-    padding-bottom: 50px;
 }
 
 .timepoint .time{
