@@ -8,3 +8,14 @@ $(function() {
       }
    });
 });
+
+function checkWeb3(){
+  if(typeof(web3) !== "undefined"){
+    $(".no-web3").hide();
+    $(".with-web3").show();
+  }
+}
+
+$(document).ready(function(){
+  checkWeb3();
+});

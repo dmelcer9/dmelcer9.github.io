@@ -18,6 +18,10 @@
   box-shadow: 0px 3px 5px grey;
 }
 
+.with-web3{
+  display: none;
+}
+
 #footer{
   height: 50px;
   background-color: white;
@@ -32,7 +36,7 @@
   padding-top: 60px;
 }
 
-.section, #content, #contactinfo, .section p, .timepoint .timedescription{
+.section, #content, #contactinfo, .section p, .timepoint .timedescription {
     font-family: 'Roboto Slab', serif; /*Most content is serif*/
 
 }
@@ -63,6 +67,10 @@
 
 .section h1, .section h2, .section h3 {
     color: black; /*Headers are black*/
+}
+
+button[disabled] {
+  cursor: not-allowed;
 }
 
 /* Spacing and Positioning */
