@@ -14,6 +14,7 @@ function checkWeb3(){
     $(".no-web3").hide();
     $(".with-web3").show();
   }
+  setTimeout(checkWeb3, 500);
 }
 
 $(document).ready(function(){
