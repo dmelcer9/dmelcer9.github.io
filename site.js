@@ -13,8 +13,10 @@ function checkWeb3(){
   if(typeof(web3) !== "undefined"){
     $(".no-web3").hide();
     $(".with-web3").show();
+  } else{
+    setTimeout(checkWeb3, 500);
   }
-  setTimeout(checkWeb3, 500);
+
 }
 
 $(document).ready(function(){
