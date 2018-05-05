@@ -122,6 +122,19 @@ button[disabled] {
   width: 100%;
 }
 
+.alert-arrow{
+  width: 0;
+  height: 0;
+  margin-left: 72px;
+  border-bottom: 15px solid #fff3cd;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+
+#alert-box{
+  margin-top: -10px;
+}
+
 @media (min-width: 999999px){ /*992*/
     /* Inline sidebar content when screen gets small */
     #sidebarright {
