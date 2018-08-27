@@ -21,4 +21,5 @@ function checkWeb3(){
 
 $(document).ready(function(){
   checkWeb3();
+  hljs.initHighlightingOnLoad();
 });

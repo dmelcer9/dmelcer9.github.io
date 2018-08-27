@@ -87,6 +87,11 @@ button[disabled] {
     min-width: 100px;
 }
 
+.image-border {
+    padding: 5px;
+    border: #9e9e9e solid 1px;
+}
+
 /* Fix link jumps */
 
 .anchor {

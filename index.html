@@ -6,8 +6,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scheme.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Computer Science student at Northeastern University. Experience with Java, Python, Smart Contract (Solidity/Web3) development and GPU computing." />
+    <meta name="description" content="Computer Science student at Northeastern University. Experience with Java, Python, Smart Contract (Solidity/Web3) development and GPU computing."
+    />
     <script src="https://use.fontawesome.com/6dd0399ab1.js"></script>
     <script src="site.js" async></script>
 </head>
@@ -15,9 +22,9 @@
 <body>
 
     <div id="header">
-      <div class="container">
-          <h1>Daniel Melcer</h1>
-      </div>
+        <div class="container">
+            <h1>Daniel Melcer</h1>
+        </div>
 
     </div>
 
@@ -35,14 +42,14 @@
                     <a href="https://www.linkedin.com/in/dmelcer9">dmelcer9</a>
                 </div>
                 <div id="github">
-                  <i class="fa fa-github"></i>
-                  <a href="https://github.com/dmelcer9">dmelcer9</a>
+                    <i class="fa fa-github"></i>
+                    <a href="https://github.com/dmelcer9">dmelcer9</a>
                 </div>
             </div>
 
             <p></p>
             <p>
-              Computer Science student at Northeastern University
+                Computer Science student at Northeastern University
             </p>
             <a class="btn btn-primary" href="CV.pdf">View Resume <i class="fa fa-file-pdf-o"></i></a>
         </div>
@@ -52,62 +59,90 @@
             <div id="maincolumn">
 
                 <div class="section">
-                  <h2>Projects</h2>
+                    <h2>Projects</h2>
+                </div>
+
+                <div class="section">
+                    <h3>Invertible Programming Language</h3>
+                    <p>This project was made in collaboration with <a href="https://github.com/GoldmanJ">Josh Goldman</a>
+                        for <a href="http://felleisen.org/matthias/4620-s18/index.html">Building Extensible Systems ("Hack
+                            your own language")</a>.</p>
+                    <pre><code class="lang-scheme">> (define f->c
+    (λ-auto-invertible (x)
+      ((muln 5/9)
+       ((subn 32) x))))
+> (f->c 32)
+0
+> (f->c -40)
+-40
+> (define c->f (invert f->c))
+> (c->f 0)
+32
+> (c->f -40)
+-40</code></pre>
+                    <p>
+
+                    </p>
+                    <a class="btn btn-primary" href="https://github.com/Inverse-Lang/Inverse-Lang">View on GitHub</a>
+                    <p></p>
+                    <p>This is a Racket-based programming language that is capable of analyzing simple functions and automatically
+                        creating the inverse of that function such that applying the inverse of a one-argument function to the result of the "normal"
+                        function results in the original argument given.
+                    </p>
                 </div>
 
 
                 <div class="section">
-                  <h3>Ethereum Connect Four</h3>
-                  <img src="images/connectfour.png" />
-                  <p>
+                    <h3>Ethereum Connect Four</h3>
+                    <img src="images/connectfour.png" />
+                    <p>
 
-                  </p>
-                  <button class="btn btn-primary no-web3" href="#" disabled>No extension found</button>
-                  <a class="btn btn-primary with-web3" href="http://connect.danielmelcer.net">Play game</a>
-                  <a class="btn btn-outline-primary" href="https://github.com/dmelcer9/connect-four-dapp">View on GitHub</a>
-                  <p>
+                    </p>
+                    <button class="btn btn-primary no-web3" href="#" disabled>No extension found</button>
+                    <a class="btn btn-primary with-web3" href="http://connect.danielmelcer.net">Play game</a>
+                    <a class="btn btn-outline-primary" href="https://github.com/dmelcer9/connect-four-dapp">View on GitHub</a>
+                    <p>
 
-                  </p>
-                  <div id="alert-box" class="no-web3">
-                    <div class="alert-arrow">
+                    </p>
+                    <div id="alert-box" class="no-web3">
+                        <div class="alert-arrow">
+
+                        </div>
+                        <div class="alert alert-warning">
+                            <strong>Note</strong> Requires MetaMask extension (recommended) or Mist browser to interact with
+                            the Ethereum network. If you would like to go to the game anyways, click <a href="http://connect.danielmelcer.net">here</a>.
+                        </div>
 
                     </div>
-                    <div class="alert alert-warning">
-                        <strong>Note</strong> Requires MetaMask extension (recommended) or Mist browser to interact with the Ethereum network.
-                        If you would like to go to the game anyways, click <a href="http://connect.danielmelcer.net">here</a>.
-                    </div>
-
-                  </div>
 
 
-                  <p>
-                    Play Connect Four on the Ethereum blockchain!
-                    A smart contract autonomously manages the current participants of a game, ensures the validity of moves made by a user, and rewards the winner of a game with a payout.
-                    Currently deployed on Ropsten testnet.
-
-
-                  </p>
+                    <p>
+                        Play Connect Four on the Ethereum blockchain! A smart contract autonomously manages the current participants of a game, ensures
+                        the validity of moves made by a user, and awards of the winner of a game. Currently deployed
+                        on Ropsten testnet.
+                    </p>
                 </div>
 
                 <div class="section">
-                  <h3>Riemann Zeta Function</h3>
-                  <img src="images/zeta.png"  />
-                  <p>  </p>
-                  Image source: <a href="https://en.wikipedia.org/wiki/Riemann_zeta_function">Wikipedia</a>
-                  <p> </p>
-                  <a class="btn btn-primary" href="https://github.com/dmelcer9/CUDAFindGCF">View on GitHub</a>
-                  <p>  </p>
-                  <p>
-                    The Riemann Zeta function is an accurate predictor of the number of primes less than a given value.
-                    The inputs of the Zeta function that cause the function to equal zero have special mathematical properties.
-                  </p>
-                  <p>
-                    Under the mentorship of David Biersach, I wrote a program that searched for a pattern in the smallest 100 known inputs with this property using their continued fraction representations.
-                    I used the CUDA framework to accelerate the computation by performing calculations hundreds of times in parallel on a consumer graphics card.
-                  </p>
-                  <p>
-                      This research was conducted as part of the 2016 High School Research Program for Brookhaven National Laboratory.
-                  </p>
+                    <h3>Riemann Zeta Function</h3>
+                    <img src="images/zeta.png" />
+                    <p> </p>
+                    Image source: <a href="https://en.wikipedia.org/wiki/Riemann_zeta_function">Wikipedia</a>
+                    <p> </p>
+                    <a class="btn btn-primary" href="https://github.com/dmelcer9/CUDAFindGCF">View on GitHub</a>
+                    <p> </p>
+                    <p>
+                        The Riemann Zeta function is an accurate predictor of the number of primes less than a given value. The inputs of the Zeta
+                        function that cause the function to equal zero have special mathematical properties.
+                    </p>
+                    <p>
+                        Under the mentorship of David Biersach, I wrote a program that searched for a pattern in the smallest 100 known inputs with
+                        this property using their continued fraction representations. I used the CUDA framework to accelerate
+                        the computation by performing calculations hundreds of times in parallel on a consumer graphics card.
+                    </p>
+                    <p>
+                        This research was conducted as part of the 2016 High School Research Program for Brookhaven National Laboratory.
+                    </p>
 
                 </div>
             </div>
@@ -117,11 +152,12 @@
 
     <div id="footer">
 
-      <!--Currently just for design, might add something here later.-->
+        <!--Currently just for design, might add something here later.-->
 
     </div>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="stylesheet.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Roboto+Slab" rel="stylesheet">
 </body>
