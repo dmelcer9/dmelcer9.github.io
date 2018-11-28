@@ -1,0 +1,27 @@
+name: Daniel Melcer
+
+description: >
+  Computer Science student at Northeastern University and Spring research intern
+  at the Air Force Research Laboratory in Rome, NY
+
+
+# The description that will go into the meta tag
+metadescription: >
+  Computer Science student at Northeastern University.
+  Experience with Java, Python, Smart Contract (Solidity/Web3) development and GPU computing.
+
+
+contact:
+ - type: email
+   icon: envelope
+   link: mailto:daniel@danielmelcer.net
+   display: daniel@danielmelcer.net
+ - type: linkedin
+   icon: linkedin-square
+   link: https://www.linkedin.com/in/dmelcer9
+   display: dmelcer9
+ - type: github
+   icon: github
+   link: https://github.com/dmelcer9
+   display: dmelcer9
+   

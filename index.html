@@ -1,7 +1,9 @@
+---
+---
 <html>
 
 <head>
-    <title>Daniel Melcer</title>
+    <title>{{site.name}}</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -13,8 +15,7 @@
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Computer Science student at Northeastern University. Experience with Java, Python, Smart Contract (Solidity/Web3) development and GPU computing."
-    />
+    <meta name="description" content="{{ site.metadescription }}"/>
     <script src="https://use.fontawesome.com/6dd0399ab1.js"></script>
     <script src="site.js" async></script>
 </head>
@@ -23,7 +24,7 @@
 
     <div id="header">
         <div class="container">
-            <h1>Daniel Melcer</h1>
+            <h1>{{site.name}}</h1>
         </div>
 
     </div>
@@ -33,23 +34,17 @@
         <div class="section">
 
             <div id="contactinfo">
-                <div id="email">
-                    <i class="fa fa-envelope"></i>
-                    <a href="mailto:daniel@danielmelcer.net">daniel@danielmelcer.net</a>
-                </div>
-                <div id="linkedin">
-                    <i class="fa fa-linkedin-square"></i>
-                    <a href="https://www.linkedin.com/in/dmelcer9">dmelcer9</a>
-                </div>
-                <div id="github">
-                    <i class="fa fa-github"></i>
-                    <a href="https://github.com/dmelcer9">dmelcer9</a>
-                </div>
+                {% for contact in site.contact %}
+                  <div id="{{contact.type}}">
+                      <i class="fa fa-{{contact.icon}}"></i>
+                      <a href="{{contact.link}}">{{contact.display}}</a>
+                  </div>
+                {% endfor %}
             </div>
 
             <p></p>
             <p>
-                Computer Science student at Northeastern University
+                {{ site.description }}
             </p>
             <a class="btn btn-primary" href="CV.pdf">View Resume <i class="fa fa-file-pdf-o"></i></a>
         </div>
