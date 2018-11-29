@@ -22,12 +22,4 @@ function checkWeb3(){
 $(document).ready(function(){
   checkWeb3();
   hljs.initHighlightingOnLoad();
-
-  $("button").click(function(event){
-    var button = event.currentTarget;
-    var redir = button.getAttribute("href");
-    if(redir){
-      window.location = button.getAttribute("href")
-    }
-  })
 });

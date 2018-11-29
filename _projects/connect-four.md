@@ -4,11 +4,12 @@ display:
   type: image
   image: "images/connectfour.png"
 buttons:
- - class: btn-primary no-web3
-   link: "#"
+ - class: btn-primary
+   aclass: no-web3
    text: No extension found
    props: disabled
- - class: btn-primary with-web3
+ - class: btn-primary
+   aclass: with-web3
    link: "http://connect.danielmelcer.net"
    text: Play game
  - class: btn-outline-primary
