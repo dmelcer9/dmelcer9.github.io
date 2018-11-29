@@ -27,6 +27,6 @@ order: 2
 </div>
 
  Play Connect Four on the Ethereum blockchain! A smart contract autonomously manages the current participants of a game, ensures
-                        the validity of moves made by a user, and awards of the winner of a game. Currently deployed
-                        on Ropsten testnet.
+the validity of moves made by a user, and awards of the winner of a game. Currently deployed
+on Ropsten testnet.
 
