@@ -1,0 +1,23 @@
+<div class="section">
+
+<h3>{{ page.title }}</h3>
+
+{% if page.header %}
+<p>{{ page.header | markdownify }}</p>
+{% endif %}
+
+{% if page.display.type == "code" %}
+<pre><code class="lang-{{page.display.language}}">{{page.display.code}}</code></pre>
+{% elsif page.display.type == "image" %}
+{% include projectimage.html url=page.display.image source=page.display.source sourceurl=page.display.sourceurl %}
+{% endif %}
+
+{% for button in page.buttons %}
+<button class="btn {{button.class}}" href="{{ button.link }}" {{button.props}}>{{button.text}}</button>
+{% endfor %}
+
+<p></p>
+
+{{content}}
+
+</div>

@@ -25,3 +25,11 @@ contact:
    link: https://github.com/dmelcer9
    display: dmelcer9
    
+defaults:
+  - scope:
+      type: projects
+    values:
+      layout: project
+      
+collections:
+  projects:
