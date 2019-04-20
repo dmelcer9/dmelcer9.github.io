@@ -6,6 +6,10 @@
 <p>{{ page.header | markdownify }}</p>
 {% endif %}
 
+{{content}}
+
+<p></p>
+
 {% if page.display.type == "code" %}
 <pre><code class="lang-{{page.display.language}}">{{page.display.code}}</code></pre>
 {% elsif page.display.type == "image" %}
@@ -24,8 +28,7 @@ Using button instead of a styled a because I want to be able to disable it
 </a>
 {% endfor %}
 
-<p></p>
+{{page.afterbuttons}}
 
-{{content}}
 
 </div>
