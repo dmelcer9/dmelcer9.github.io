@@ -140,6 +140,10 @@ button[disabled] {
   margin-top: -10px;
 }
 
+#button{
+    display: inherit;
+}
+
 @media (min-width: 999999px){ /*992*/
     /* Inline sidebar content when screen gets small */
     #sidebarright {

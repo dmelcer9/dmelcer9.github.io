@@ -10,7 +10,7 @@ $(function() {
 });
 
 function checkWeb3(){
-  if(typeof(web3) !== "undefined"){
+  if(typeof(ethereum) !== "undefined"){
     $(".no-web3").hide();
     $(".with-web3").show();
   } else{

@@ -1,0 +1,34 @@
+<div class="section">
+
+<h3>{{ page.title }}</h3>
+
+{% if page.header %}
+<p>{{ page.header | markdownify }}</p>
+{% endif %}
+
+{{content}}
+
+<p></p>
+
+{% if page.display.type == "code" %}
+<pre><code class="lang-{{page.display.language}}">{{page.display.code}}</code></pre>
+{% elsif page.display.type == "image" %}
+{% include projectimage.html url=page.display.image source=page.display.source sourceurl=page.display.sourceurl %}
+{% endif %}
+
+{% for button in page.buttons %}
+{% comment %}
+The button needs to be wrapped in the a href to actually do the redirect
+because button for some stupid reason doesn't have its own href
+
+Using button instead of a styled a because I want to be able to disable it
+{% endcomment %}
+<a class="{{button.aclass}}" href="{{button.link}}">
+    <button class="btn {{button.class}}" {{button.props}}>{{button.text}}</button>
+</a>
+{% endfor %}
+
+{{page.afterbuttons}}
+
+
+</div>
