@@ -3,8 +3,8 @@ title: Riemann Zeta Function GPU Fraction Search
 display:
   type: image
   image: "images/zeta.png"
-  source: Wikipedia
-  sourceurl: "https://en.wikipedia.org/wiki/Riemann_zeta_function"
+  source: Linas Vepstas [CC BY-SA 3.0]
+  sourceurl: "https://commons.wikimedia.org/wiki/File:Zeta_polar.svg"
 buttons:
  - class: btn-primary
    link: "https://github.com/dmelcer9/CUDAFindGCF"
