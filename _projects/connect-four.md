@@ -10,7 +10,7 @@ buttons:
    props: disabled
  - class: btn-primary
    aclass: with-web3
-   link: "http://connect.danielmelcer.net"
+   link: "http://connect.melcer.dev"
    text: Play game
  - class: btn-outline-primary
    link: "https://github.com/dmelcer9/connect-four-dapp"
@@ -23,7 +23,7 @@ afterbuttons: >
       </div>
       <div class="alert alert-warning">
           <strong>Note</strong> Requires MetaMask extension to interact with the application. 
-          If you would like to go to the game anyways, click <a href="http://connect.danielmelcer.net">here</a>.
+          If you would like to go to the game anyways, click <a href="http://connect.melcer.dev">here</a>.
       </div>
   </div>
 ---
