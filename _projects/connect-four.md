@@ -18,7 +18,7 @@ buttons:
 order: 2
 afterbuttons: >
   <p></p>
-  <div id="alert-box" class="no-web3">
+  <div class="alert-box no-web3">
       <div class="alert-arrow">
       </div>
       <div class="alert alert-warning">

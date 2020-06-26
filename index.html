@@ -1,81 +1,53 @@
 ---
+layout: default
+title: Daniel Melcer
+syntax_highlight:
+  - scheme
 ---
-<html>
 
-<head>
-    <title>{{site.name}}</title>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/scheme.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
-    <script>hljs.initHighlightingOnLoad();</script>
-
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{{ site.metadescription }}"/>
-    <script src="https://use.fontawesome.com/6dd0399ab1.js"></script>
-    <script src="site.js" async></script>
-</head>
-
-<style>
-    {% include_relative stylesheet.css %}
-</style>
-
-<body>
-
-    <div id="header">
-        <div class="container">
-            <h1>{{site.name}}</h1>
-        </div>
-
+<div class="container" id="content">
+  <div class="section">
+    <div id="contactinfo">
+      {% for contact in site.contact %}
+      <div id="{{contact.type}}">
+        <i class="fa fa-{{contact.icon}}"></i>
+        <a href="{{contact.link}}">{{contact.display}}</a>
+      </div>
+      {% endfor %}
     </div>
 
-    <div class="container" id="content">
+    <p></p>
+    <p>
+      {{ site.description }}
+    </p>
+    <a class="btn btn-primary" href="CV.pdf"
+      >View Resume <i class="fa fa-file-pdf-o"></i
+    ></a>
 
-        <div class="section">
+    <p></p>
 
-            <div id="contactinfo">
-                {% for contact in site.contact %}
-                  <div id="{{contact.type}}">
-                      <i class="fa fa-{{contact.icon}}"></i>
-                      <a href="{{contact.link}}">{{contact.display}}</a>
-                  </div>
-                {% endfor %}
-            </div>
+    <div class="section">
+      <h2>Recent Posts</h2>
 
-            <p></p>
-            <p>
-                {{ site.description }}
-            </p>
-            <a class="btn btn-primary" href="CV.pdf">View Resume <i class="fa fa-file-pdf-o"></i></a>
-        </div>
+      {% for post in site.posts limit:1 %}
+        {% include inline_blog_post.html post=post %}
+      {% endfor %}
 
-        <div id="maincontent">
-
-            <div id="maincolumn">
-
-                <div class="section">
-                    <h2>Projects</h2>
-                </div>
-
-                {% assign projects = site.projects | sort: "order" %}
-                {% assign projectsorder = projects | reverse %}
-
-                {% for project in projectsorder %}
-                  {{project.output}}
-                {% endfor %}
-
-            </div>
-
-        </div>
+      <p>
+        <a href="/blog">View more blog posts &raquo;</a>
+      </p>
     </div>
-<!-- What's in the footer? -->
-    <div id="footer">
 
-        <!--
+    <div class="section" id="projects">
+      <h2>Projects</h2>
+      {% include project_list.html %}
+    </div>
+
+  </div>
+
+  <!-- What's in the footer? -->
+  <div id="cubes-footer">
+    <!--
    _____ _    _ ____  ______  _____ 
   / ____| |  | |  _ \|  ____|/ ____|
  | |    | |  | | |_) | |__  | (___  
@@ -87,13 +59,6 @@
   Now, you can!
   But cubes really don't like if the mouse touches them- the mouse is too pointy.
         -->
-        <div><a href="/cubes" id="square"></a></div>
-
-    </div>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Roboto+Slab" rel="stylesheet">
-</body>
-
-</html>
+    <div><a href="/cubes" id="cubes-footer-square"></a></div>
+  </div>
+</div>

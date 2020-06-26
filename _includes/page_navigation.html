@@ -1,0 +1,23 @@
+<div class="section page-navigation">
+  <span class="page-nav-box page-nav-box-prev">
+    {% if include.previous_url %}
+      <a class="prev-page" href="{{include.previous_url}}"
+        >&laquo; {{include.previous_title}}</a
+      >
+    {% endif %} 
+  </span>
+
+  {% if include.middle_text %}
+    <span class="page-nav-box page-nav-box-mid">
+      {{ include.middle_text }}
+    </span>
+  {% endif %} 
+
+  <span class="page-nav-box page-nav-box-next">
+    {% if include.next_url %}
+      <a class="next-page" href="{{include.next_url}}"
+        >{{include.next_title}} &raquo;</a
+      >
+    {% endif %}
+  </span>
+</div>

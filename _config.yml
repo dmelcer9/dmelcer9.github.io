@@ -3,12 +3,17 @@ name: Daniel Melcer
 description: >
   Computer Science student at Northeastern University
 
+plugins:
+  - jekyll-paginate
 
 # The description that will go into the meta tag
 metadescription: >
   Computer Science student at Northeastern University.
   Experience with Java, Python, Smart Contract (Solidity/Web3) development and GPU computing.
 
+sass:
+  sass_dir: _sass
+  style: compressed
 
 contact:
  - type: email
@@ -29,6 +34,15 @@ defaults:
       type: projects
     values:
       layout: project
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+paginate: 5
+paginate_path: "/blog/:num"
 
 collections:
   projects:
+  posts:

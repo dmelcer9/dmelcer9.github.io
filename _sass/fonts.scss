@@ -1,0 +1,21 @@
+
+.section,
+#content,
+#contactinfo,
+.section p,
+.timepoint .timedescription {
+  font-family: "Roboto Slab", serif; /*Most content is serif*/
+}
+
+
+.nav {
+  font-family: "Open Sans", sans-serif; /*Minor headers and nav are sans-serif*/
+}
+
+#header h1,
+.section h1,
+.section h2,
+.section h3 {
+  font-family: "Open Sans", sans-serif; /*Major headers are sans-serif semi-bold*/
+  font-weight: 600;
+}

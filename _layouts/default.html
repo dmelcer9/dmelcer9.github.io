@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <title>{{ page.title }}</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="{{ site.metadescription }}" />
+    <script src="https://use.fontawesome.com/6dd0399ab1.js"></script>
+    <script src="/site.js" async></script>
+
+    {% if page.syntax_highlight %}
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        {% for lang in page.syntax_highlight %}
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/{{lang}}.min.js"></script>
+        {% endfor %}
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"
+        />
+        <script>
+        hljs.initHighlightingOnLoad();
+        </script>
+    {% endif %}
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+  crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="/stylesheets/stylesheet.css">
+  </head>
+
+ 
+
+  <body>
+
+      <div id="header">
+        <nav class="container">
+          <a id="site-name" href="/">
+            {{site.name}}
+          </a>
+
+          <span id="nav-links">
+            <span class="nav-link">
+              <a href="/">Home</a>
+            </span>
+            <span class="nav-link">
+              <a href="/projects.html">Projects</a>
+            </span>
+            <span class="nav-link">
+              <a href="/blog">Blog</a>
+            </span>
+          </div>
+        </nav>
+      </div>
+        
+    {{ content }}
+  </body>
+
+</html>
