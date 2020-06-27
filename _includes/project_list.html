@@ -1,8 +1,7 @@
-
-      {% assign projects = site.projects | sort: "order" %} 
-      {% assign projectsorder = projects | reverse %} 
-      {% for project in projectsorder %}
-      <div class="section">
-            {{project.output}} 
-      </div>
-      {% endfor %}
+{% assign projects = site.projects | sort: "order" %}
+{% assign projectsorder = projects | reverse %}
+{% for project in projectsorder %}
+<div class="section">
+    {{project.output}}
+</div>
+{% endfor %}

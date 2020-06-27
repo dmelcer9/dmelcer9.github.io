@@ -10,12 +10,12 @@ title: Blog
 {% endfor %}
 
 {% capture middle_text %}
-    (Page {{paginator.page}} of {{paginator.total_pages}})
+(Page {{paginator.page}} of {{paginator.total_pages}})
 {% endcapture %}
 
 {% include page_navigation.html
- previous_url = paginator.previous_page_path
- previous_title = "Previous"
- middle_text = middle_text
- next_url = paginator.next_page_path
- next_title = "Next" %}
+previous_url = paginator.previous_page_path
+previous_title = "Previous"
+middle_text = middle_text
+next_url = paginator.next_page_path
+next_title = "Next" %}

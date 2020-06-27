@@ -1,5 +1,6 @@
 ---
 title: "Sci-fi Pet Peeves #1: The Space Odyssey Ending"
+tags: ["books", "sci-fi", "reviews"]
 ---
 
 There are a few common patterns in sci-fi books that I can't say that I'm a huge

@@ -17,19 +17,19 @@ sass:
   style: compressed
 
 contact:
- - type: email
-   icon: envelope
-   link: mailto:daniel@melcer.dev
-   display: daniel@melcer.dev
- - type: linkedin
-   icon: linkedin-square
-   link: https://www.linkedin.com/in/dmelcer9
-   display: dmelcer9
- - type: github
-   icon: github
-   link: https://github.com/dmelcer9
-   display: dmelcer9
-   
+  - type: email
+    icon: envelope
+    link: mailto:daniel@melcer.dev
+    display: daniel@melcer.dev
+  - type: linkedin
+    icon: linkedin-square
+    link: https://www.linkedin.com/in/dmelcer9
+    display: dmelcer9
+  - type: github
+    icon: github
+    link: https://github.com/dmelcer9
+    display: dmelcer9
+
 defaults:
   - scope:
       type: projects
@@ -41,6 +41,8 @@ defaults:
     values:
       layout: post
       author: Daniel Melcer
+
+highlighter: rouge
 
 paginate: 5
 paginate_path: "/blog/:num"
