@@ -5,7 +5,7 @@ header: >
   [Building Extensible Systems ("Hack your own language")](http://felleisen.org/matthias/4620-s18/index.html).
 display: 
   type: code
-  language: scheme
+  language: racket
   code: |
     > (define f->c
         (λ-auto-invertible (x)

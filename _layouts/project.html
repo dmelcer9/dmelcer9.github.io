@@ -10,9 +10,15 @@
 
 {% if page.display.type == "code" %}
 
-{% highlight racket %}
+{% comment %}
+Ugly workaround, need to duplicate the next few lines for each language used.
+{% endcomment %}
+
+{% if page.display.language == "racket" %}
+    {% highlight racket %}
 {{page.display.code}}
-{% endhighlight %}
+    {% endhighlight %}
+{% endif %}
 
 {% elsif page.display.type == "image" %}
 {% include projectimage.html url=page.display.image source=page.display.source sourceurl=page.display.sourceurl %}
