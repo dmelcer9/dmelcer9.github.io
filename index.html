@@ -28,7 +28,7 @@ title: Daniel Melcer
             <h2>Recent Posts</h2>
 
             {% for post in site.posts limit:1 %}
-            {% include inline_blog_post.html post=post %}
+            {% include inline_blog_excerpt.html post=post %}
             {% endfor %}
 
             <p>
