@@ -1,5 +1,4 @@
 ---
-# redirect_to: https://www.example.com
+redirect_to: /pdfs/2022-06-shield-decomposition-safe-rl-camera-ready.pdf
 ---
 
-Placeholder for poster QR Code
