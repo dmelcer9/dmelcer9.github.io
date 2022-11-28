@@ -3,8 +3,8 @@ header: "**Daniel Melcer**, Christopher Amato, Stavros Tripakis- NeurIPS 2022 Or
 title: Shield Decentralization for Safe Multi-Agent Reinforcement Learning
 buttons:
  - class: btn-primary
-   link: "https://github.com/dmelcer9/CUDAFindGCF"
-   text: Openreview
+   link: "https://openreview.net/forum?id=JO9o3DgV9l2"
+   text: View on Openreview
 order: 8
 ---
 
