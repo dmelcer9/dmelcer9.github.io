@@ -1,6 +1,6 @@
 ---
 title: "ProofViz: An Interactive Visual Proof Explorer"
-header: "**Daniel Melcer**, Stephen Chang- In Review"
+header: "**Daniel Melcer**, Stephen Chang- [TFP 2021](https://link.springer.com/chapter/10.1007/978-3-030-83978-9_6)"
 display:
   type: image
   image: "images/proof-explorer.png"
@@ -8,6 +8,9 @@ buttons:
  - class: btn-primary
    link: "https://github.com/dmelcer9/cur/tree/visual-explorer"
    text: View on GitHub
+ - class: btn-primary-outline
+   link: "https://link.springer.com/chapter/10.1007/978-3-030-83978-9_6"
+   text: "doi:10.1007/978-3-030-83978-9_6 <i class="fa fa-file-pdf-o"></i>"
 order: 8
 ---
 
