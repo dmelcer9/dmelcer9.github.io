@@ -8,9 +8,9 @@ buttons:
  - class: btn-primary
    link: "https://github.com/dmelcer9/cur/tree/visual-explorer"
    text: View on GitHub
- - class: btn-primary-outline
+ - class: btn-outline-primary
    link: "https://link.springer.com/chapter/10.1007/978-3-030-83978-9_6"
-   text: "doi:10.1007/978-3-030-83978-9_6 <i class="fa fa-file-pdf-o"></i>"
+   text: doi:10.1007/978-3-030-83978-9_6 <i class="fa fa-file-pdf-o"></i>
 order: 8
 ---
 
