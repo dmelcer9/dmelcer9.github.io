@@ -7,7 +7,7 @@ display:
 buttons:
  - class: btn-primary
    link: "https://openreview.net/forum?id=JO9o3DgV9l2"
-   text: "Openreview <i class="fa fa-file-pdf-o"></i>"
+   text: Openreview <i class="fa fa-file-pdf-o"></i>
 order: 9
 ---
 
