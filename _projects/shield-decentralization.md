@@ -1,5 +1,5 @@
 ---
-header: "**Daniel Melcer**, Christopher Amato, Stavros Tripakis- [NeurIPS 2022](https://openreview.net/forum?id=JO9o3DgV9l2) **Oral (1.9% acceptance rate)**"
+header: "**Daniel Melcer**, Christopher Amato, Stavros Tripakis- [NeurIPS 2022](https://openreview.net/forum?id=JO9o3DgV9l2) **Oral (2.1% acceptance rate)**"
 title: Shield Decentralization for Safe Multi-Agent Reinforcement Learning
 display:
   type: image
