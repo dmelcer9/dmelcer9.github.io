@@ -9,7 +9,7 @@ title: Daniel Melcer
             {% for contact in site.contact %}
             <div id="{{contact.type}}">
                 <i class="fa fa-{{contact.icon}}"></i>
-                <a href="{{contact.link}}">{{contact.display}}</a>
+                <a rel="me" href="{{contact.link}}">{{contact.display}}</a>
             </div>
             {% endfor %}
         </div>
