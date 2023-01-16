@@ -32,8 +32,8 @@ contact:
     display: dmelcer9
   - type: mastodon
     icon: brands fa-mastodon
-    link: https://mstdn.social/@dmelcer9
-    display: @dmelcer9@mstdn.social
+    link: "https://mstdn.social/@dmelcer9"
+    display: "@dmelcer9@mstdn.social"
 
 defaults:
   - scope:
