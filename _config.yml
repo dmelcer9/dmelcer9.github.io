@@ -30,10 +30,10 @@ contact:
     icon: brands fa-github
     link: https://github.com/dmelcer9
     display: dmelcer9
-  - type: mastodon
-    icon: brands fa-mastodon
-    link: "https://mstdn.social/@dmelcer9"
-    display: "@dmelcer9@mstdn.social"
+  - type: scholar
+    icon: brands fa-google-scholar
+    link: "https://scholar.google.com/citations?user=dkyCcJIAAAAJ&hl=en"
+    display: "Google Scholar"
 
 defaults:
   - scope:
