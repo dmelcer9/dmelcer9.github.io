@@ -1,5 +1,5 @@
 ---
-title: An open letter to Dean Beth Mynatt and Senior Associate Dean Ben Hescott
+title: An Open Letter to Dean Beth Mynatt and Senior Associate Dean Ben Hescott
 tags: []
 ---
 
