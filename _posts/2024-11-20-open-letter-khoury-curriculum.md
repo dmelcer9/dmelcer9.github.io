@@ -20,3 +20,5 @@ Please don't let Khoury College make a mistake equal to when all the universitie
 Regards,
 
 Daniel
+
+**Addendum** I sent essentially the above letter as an email, so I would like to preserve it as-is. But I would like to clarify the paragraph about professors at global campuses: I am _not_ suggesting that TAs should teach the course in Oakland. Rather, that if a TA is able to gain a deep understanding of the course material in just one semester, then it is not unreasonable for Northeastern to invest the resources to train the professors in the global network. The "lowest common denominator" does not refer to a struggling student, but rather to a professor who is unwilling or unable to adopt the HTDP curriculum.
