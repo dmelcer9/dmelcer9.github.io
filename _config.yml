@@ -10,8 +10,7 @@ plugins:
 
 # The description that will go into the meta tag
 metadescription: >
-  Computer Science student at Northeastern University.
-  Experience with Java, Python, Smart Contract (Solidity/Web3) development and GPU computing.
+  Computer Science PhD Student at Northeastern University.
 
 sass:
   sass_dir: _sass
