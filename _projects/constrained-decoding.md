@@ -4,7 +4,8 @@ title: Constrained Decoding for Code Language Models via Efficient Left and Righ
 buttons:
  - class: btn-primary
    link: "https://arxiv.org/pdf/2402.17988"
-   text: View on ArXiv
+   text: arXiv <i class="fa fa-file-pdf-o"></i>
+
 order: 10
 ---
 
